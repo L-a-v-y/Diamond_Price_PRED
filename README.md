@@ -1,4 +1,4 @@
-#Diamond Price Prediction Web App
+##Diamond Price Prediction Web App
 This web application allows users to predict the price of a diamond based on various attributes such as carat, depth, table, color, and clarity.
 
 #Installation
