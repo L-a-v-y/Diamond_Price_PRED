@@ -10,7 +10,6 @@ pip install -r requirements.txt
 
 ### Run the Flask application:
 flask run
-This will start the application on http://localhost:5000/.
 
 ## Usage
 Open your web browser and navigate to http://localhost:5000/.
