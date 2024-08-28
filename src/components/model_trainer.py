@@ -1,7 +1,8 @@
 import numpy as np
 import pandas as pd
 from sklearn.linear_model import LinearRegression, Ridge,Lasso,ElasticNet
-from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.svm import SVR
 from src.exception import CustomException
 from src.logger import logging
 
@@ -35,7 +36,8 @@ class ModelTrainer:
             'Lasso':Lasso(),
             'Ridge':Ridge(),
             'Elasticnet':ElasticNet(),
-            'DecisionTree':DecisionTreeRegressor()
+	        'RandomForest':RandomForestRegressor(),
+ 	        'svr_model':SVR(kernel='rbf')
             }
             
             model_report:dict=evaluate_model(X_train,y_train,X_test,y_test,models)
