@@ -36,8 +36,8 @@ class ModelTrainer:
             'Lasso':Lasso(),
             'Ridge':Ridge(),
             'Elasticnet':ElasticNet(),
-	        'RandomForest':RandomForestRegressor(),
- 	        'svr_model':SVR(kernel='rbf')
+	    'RandomForest':RandomForestRegressor(),
+ 	    'svr_model':SVR(kernel='rbf')
             }
             
             model_report:dict=evaluate_model(X_train,y_train,X_test,y_test,models)
